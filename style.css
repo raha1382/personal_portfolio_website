@@ -20,3 +20,36 @@ p{
 a , .btn{
     transition: all 300ms ease;
 }
+
+/*desktop nav*/
+
+nav, .nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links{
+    gap:2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: rgb(0,0,0);
+    text-decoration: none;
+    text-decoration-color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(158, 158, 158);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.logo{
+    font-size: 2rem;
+}
+.logo:hover{
+    cursor:default;
+}
