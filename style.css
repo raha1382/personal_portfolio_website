@@ -15,6 +15,9 @@ html{
 p{
     color: rgb(85,85,85);
 }
+h2{
+    color: rgb(85,85,85);
+}
 /*transitions*/
 
 a , .btn{
@@ -24,6 +27,7 @@ a , .btn{
 /*desktop nav*/
 
 nav, .nav-links{
+    width: 100%;
     display: flex;
 }
 nav{
@@ -73,7 +77,7 @@ a:hover{
     width: 100%;
     height: 2px;
     background-color: rgb(0,0,0);
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .menu-links{
     position: absolute;
@@ -83,7 +87,7 @@ a:hover{
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .menu-links a{
     display: block;
@@ -92,7 +96,7 @@ a:hover{
     font-size: 1.5rem;
     color: rgb(0,0,0);
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .menu-links li{
     list-style: none;
@@ -112,4 +116,59 @@ a:hover{
 .hamburger-icon span:first-child{
     transform: none;
     opacity:1;
+}
+/*profile section*/
+.flexability{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.picture{
+    margin:2vh;
+    width: 60vh;  
+    height: 60vh;     
+    border-radius: 50%; 
+    object-fit: cover;  
+}
+.s-picture{
+    width: 5vh;  
+    height: 5vh;     
+    margin:0;
+    fill:rgb(85,85,85);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.s-picture:hover{
+    fill: rgb(255, 255, 255);
+    
+}
+.center-items{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    gap:1vh;
+}
+.center-items-column{
+    flex-direction: column;
+    gap:0;
+}
+.cv-pdf-section{
+    border-radius: 25px;
+    width: 20vh;  
+    height: 4vh;   
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    border:2px solid rgb(85,85,85);
+}
+.cv-pdf-section:hover{
+    background-color: rgb(85,85,85);
+    border:2px solid rgb(255, 255, 255)
+}
+.cv-pdf-section:hover p{
+    color: rgb(255, 255, 255);
 }
