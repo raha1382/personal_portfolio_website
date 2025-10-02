@@ -100,8 +100,7 @@ a:hover{
     top:100%;
     right: 0;
     border-bottom-left-radius: 25px; 
-    right:0;
-    top:0;
+    top:17vh;
     height: 100%;
     box-shadow:20px 20px 20px rgb(85,85,85);
     background-color:  rgb(255, 255, 255);
