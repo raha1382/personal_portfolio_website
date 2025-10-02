@@ -103,7 +103,7 @@ a:hover{
     right:0;
     top:0;
     height: 100%;
-    box-shadow:20px 20px 20px rgb(255, 246, 233);
+    box-shadow:20px 20px 20px rgb(85,85,85);
     background-color:  rgb(255, 255, 255);
     width: fit-content;
     max-height: 0;
