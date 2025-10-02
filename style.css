@@ -207,6 +207,7 @@ a:hover{
 }
 .background-home{
     background-color: rgb(255, 246, 233);
+    box-shadow: 5px 10px 10px rgb(85,85,85);
 }
 .background{
     width: 80%;
@@ -216,12 +217,31 @@ a:hover{
 /*about me*/
 .background-aboutme{
     background-color: rgb(226, 253, 255);
+    box-shadow: 5px 10px 10px rgb(85,85,85);
     margin-top: 30px;
     padding: 30px;
 }
 .s-round-picture{
     border-radius: 25px !important;
 }
-.direction{
+.Aboutme-p{
     text-align: left;
+    margin-top: 2vh;
+}
+.Aboutme-box{
+    min-width: 100px;
+    width:20vh;
+    border-radius: 25px;
+    padding:2vh;
+    text-align: left;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.Aboutme-text{
+    max-width:700px;
 }
