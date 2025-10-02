@@ -8,15 +8,21 @@
 }
 body{
     font-family: "Poppins",sans-serif;
+     overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
 }
 p{
     color: rgb(85,85,85);
+    font-size: clamp(4px, 2.5vw, 16px);
 }
 h2{
     color: rgb(85,85,85);
+    font-size: clamp(8px, 2.5vw, 24px);
+}
+h1{
+    font-size: clamp(16px, 2.5vw, 32px);
 }
 /*transitions*/
 
@@ -127,29 +133,39 @@ a:hover{
 }
 .picture{
     margin:2vh;
-    width: 60vh;  
-    height: 60vh;     
+    max-width: 60vh;  
+    max-height: 60vh;   
+    width: 90%;
+    height: 90%;  
     border-radius: 50%; 
     object-fit: cover;  
 }
 .s-picture{
-    width: 5vh;  
-    height: 5vh;     
+    max-width: 5vh !important;  
+    max-height: 5vh !important;    
+    width: 90% !important; 
+    height: 90% !important;
     margin:0;
-    fill:rgb(85,85,85);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-}
+    }
 .s-picture:hover{
-    fill: rgb(255, 255, 255);
-    
+    transform: scale(0.9);
+    opacity: 0.7;
+
+}
+.icon{
+    display:flex;
+    flex-wrap: wrap;
 }
 .center-items{
     display:flex;
     justify-content:center;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
     gap:1vh;
+    margin: 10px ;
 }
 .center-items-column{
     flex-direction: column;
@@ -158,7 +174,8 @@ a:hover{
 .cv-pdf-section{
     border-radius: 25px;
     width: 20vh;  
-    height: 4vh;   
+    height: 5vh;  
+    min-width: 50px; 
     display:flex;
     justify-content:center;
     text-align: center;
@@ -171,4 +188,10 @@ a:hover{
 }
 .cv-pdf-section:hover p{
     color: rgb(255, 255, 255);
+}
+.background{
+    width: 80%;
+    background-color: rgb(255, 246, 233);
+    border-radius: 25px;
+    padding: 10px;
 }
