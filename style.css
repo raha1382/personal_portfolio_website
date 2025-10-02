@@ -260,9 +260,23 @@ a:hover{
 }
 .Experience-box{
     min-width: 100px;
-    width:40vh;
+    width:45vh;
     border-radius: 25px;
     padding:3vh;
     text-align: left;
     border:2px solid rgb(255, 255, 255);
+}
+#Verified-Icon{
+    width :24px;
+    height :24px;
+}
+.Experience-text{
+    margin-left: 20px;
+}
+.right{
+    float:right;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
 }
