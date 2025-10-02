@@ -4,3 +4,11 @@ function togglemenu(){
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+function openCvPdf() {
+    const filePath = "assets/CV.pdf";
+    const fileName = "raha-kariminia-cv.pdf";
+
+    window.open(filePath, "_blank");
+
+  }
