@@ -266,6 +266,7 @@ a:hover{
 .Experience-box{
     min-width: 100px;
     width:45vh;
+    height: auto;
     border-radius: 25px;
     padding:3vh;
     text-align: left;
@@ -381,4 +382,27 @@ a:hover{
 }
 .Contact-icons img{
     margin-right: 10px;
+}
+/*footer*/
+.background-footer{
+    background-color: rgb(15, 0, 68);
+    margin-top: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    width: 100%;
+    height: 20vh;
+}
+.footer-box{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-box p{
+    color: rgb(221, 255, 235);
+}
+.footer-box ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
