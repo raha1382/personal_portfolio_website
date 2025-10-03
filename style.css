@@ -200,6 +200,7 @@ a:hover{
 .cv-pdf-section:hover{
     background-color: rgb(85,85,85);
     border:2px solid rgb(255, 255, 255);
+    cursor: pointer;
 }
 .cv-pdf-section:hover p{
     color: rgb(255, 255, 255);
