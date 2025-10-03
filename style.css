@@ -394,8 +394,8 @@ a:hover{
 }
 .footer-box{
     display: flex;
-    width: 60%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
     align-items: center;
 }
 .footer-box p{
@@ -403,6 +403,6 @@ a:hover{
 }
 .footer-box ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
