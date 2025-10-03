@@ -304,13 +304,16 @@ a:hover{
     border:2px solid rgb(85,85,85);
     background-color: rgb(253, 255, 220);
 }
+.Project-button p{
+    color: rgb(158, 158, 158) !important;
+}
 .Project-button:hover{
     background-color: rgb(85,85,85);
     border:2px solid rgb(255, 255, 255);
     cursor: pointer;
 }
 .Project-button:hover p{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
 }
 .Project-link{
     text-decoration: none;
@@ -345,7 +348,7 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center !important;
     position: absolute;
     width:100%;
     aspect-ratio: 1/1;
@@ -353,6 +356,10 @@ a:hover{
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
     
+}
+.slide p{
+    padding: 1vh;
+    color: rgb(255, 255, 255);
 }
 /*contact*/
 .background-contact{

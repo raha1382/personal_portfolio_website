@@ -6,7 +6,7 @@ function togglemenu(){
 }
 
 function openCvPdf() {
-    const filePath = "assets/CV.pdf";
+    const filePath = "assets/CV-Raha-Kariminia.pdf";
     const fileName = "raha-kariminia-cv.pdf";
 
     window.open(filePath, "_blank");
