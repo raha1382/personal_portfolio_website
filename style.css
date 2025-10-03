@@ -10,9 +10,15 @@ body{
     font-family: "Poppins",sans-serif;
     overflow-x: hidden;
     padding-top: 17vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 html{
     scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 p{
     color: rgb(85,85,85);
@@ -314,8 +320,10 @@ a:hover{
 }
 .Project-box{
     min-width: 100px;
-    width:45vh;
-    height: 300px;
+    width: 100%;
+    max-width: 45vh;
+    height: 100%;
+    max-height: 55vh;
     border-radius: 25px;
     padding:3vh;
     text-align: left;
@@ -329,6 +337,9 @@ a:hover{
 }
 .Project-picture{
     width: 100%;
+    max-width: 45vh;
+    height: 100%;
+    max-height: 55vh;
     border-radius: 25px;
     height: 100%;
 }
