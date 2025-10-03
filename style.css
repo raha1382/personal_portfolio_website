@@ -294,7 +294,7 @@ a:hover{
 }
 .Project-button{
     border-radius: 25px;
-    width: 20vh;  
+    width: 15vh;  
     height: 5vh;  
     min-width: 50px; 
     display:flex;
@@ -319,14 +319,14 @@ a:hover{
     text-decoration: none;
 }
 .Project-box{
-    min-width: 100px;
-    width: 100%;
     max-width: 45vh;
-    height: 55vh;
+    width:100%;
+    aspect-ratio: 1/1;
     border-radius: 25px;
     padding:3vh;
     text-align: left;
     border:2px solid rgb(85,85,85);
+    position: relative;
 }
 .Project-box:hover .slide{
     background-color: rgba(0, 0, 0, 0.8);
@@ -337,9 +337,8 @@ a:hover{
 .Project-picture{
     width: 100%;
     max-width: 45vh;
-    height: 55vh;
+    aspect-ratio: 1/1;
     border-radius: 25px;
-    height: 100%;
 }
 .slide{
     display: flex;
@@ -348,8 +347,8 @@ a:hover{
     align-items: center;
     text-align: left;
     position: absolute;
-    width:45vh;
-    height: 55vh;
+    width:100%;
+    aspect-ratio: 1/1;
     opacity: 0;
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
