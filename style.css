@@ -301,10 +301,16 @@ a:hover{
 .Project-button:hover{
     background-color: rgb(85,85,85);
     border:2px solid rgb(255, 255, 255);
-    opacity:1;
+    cursor: pointer;
 }
 .Project-button:hover p{
     color: rgb(255, 255, 255);
+}
+.Project-link{
+    text-decoration: none;
+}
+.Project-link:hover{
+    text-decoration: none;
 }
 .Project-box{
     min-width: 100px;
