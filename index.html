@@ -1,288 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raha Kariminia — Portfolio</title>
+  <link rel="stylesheet" href="generals.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
-<body class="flexability">
-    <nav id="desktop-nav">
-        <div class="logo"> Raha Kariminia
+<body>
+
+  <nav id="desktop-nav">
+    <div class="logo">Raha Kariminia</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Raha Kariminia</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="togglemenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#home" onclick="togglemenu()">Home</a></li>
+        <li><a href="#about" onclick="togglemenu()">About</a></li>
+        <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+        <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+        <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <span class="hero-subtitle">
+        Hello, I'm
+      </span>
+
+      <h1 class="hero-name">
+        <span class="first">Raha</span>
+        <span class="last">Kariminia</span>
+      </h1>
+
+      <h2>Bachelor's student in Computer Science</h2>
+
+      <p class="hero-availability">
+        <span class="pulse-dot"></span>
+        Open to research & collaboration
+      </p>
+
+      <p class="hero-desc">
+        Passionate about <span class="accent">Artificial Intelligence</span>, Deep Learning, and Machine Learning.
+        I build intelligent systems and enjoy turning research ideas into real, working projects.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="openCvPdf()">Download CV</button>
+        <div class="hero-icons">
+          <a href="https://github.com/raha1382" target="_blank" rel="noopener noreferrer">
+            <img src="assets/1608908_github_icon.svg" alt="GitHub" class="icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/raha-kariminia-709288388/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/4875796_linkedin_icon.svg" alt="LinkedIn" class="icon" />
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kariminiaraha185@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/4875795_mail_icon.svg" alt="Email" class="icon" />
+          </a>
+          <a href="https://t.me/Radiya2254" target="_blank" rel="noopener noreferrer">
+            <img src="assets/4875780_telegram_icon.svg" alt="Telegram" class="icon" />
+          </a>
         </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#Home"> Home</a></li>
-                <li><a href="#about"> About</a></li>
-                <li><a href="#experience"> Exprience</a></li>
-                <li><a href="#projects"> Projects</a></li>
-                <li><a href="#contact"> Contact</a></li>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/image.png" alt="Raha Kariminia" />
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Get to know more</p>
+      <h1>About Me</h1>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="assets/image.png" alt="Raha Kariminia" />
+      </div>
+
+      <div class="about-content">
+        <p class="about-quote">"Curious mind, building intelligent systems — one project at a time."</p>
+
+        <p>
+          I am passionate about Artificial Intelligence, focusing on Deep Learning and Machine Learning.
+          I have experience with Python, C/C++, and tools like VS Code, Visual Studio, and PyCharm.
+          My background includes data analysis using pandas, NumPy, Matplotlib, and scikit-learn.
+        </p>
+        <p>
+          I also have experience in front-end development using HTML, CSS, JavaScript, TypeScript,
+          React, and Tailwind CSS. I am organized, independent, and team-oriented — a problem-solver
+          excited about theory and research, always seeking personal and professional growth.
+        </p>
+
+        <div class="about-cards">
+          <div class="info-card">
+            <h3>Awards</h3>
+            <ul>
+              <li>Silver medal — 39th Mathematical Olympiad (2020–2021)</li>
+              <li>Algorithm certificate</li>
+              <li>Scrum / Agile certificate</li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo"> Raha Kariminia
-        </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#Home" onclick="togglemenu()"> Home</a></li>
-                <li><a href="#about" onclick="togglemenu()"> About</a></li>
-                <li><a href="#experience" onclick="togglemenu()"> Exprience</a></li>
-                <li><a href="#projects" onclick="togglemenu()"> Projects</a></li>
-                <li><a href="#contact" onclick="togglemenu()"> Contact</a></li>
-            </div>
+          </div>
 
-        </div>
-    </nav>
-    <section id="Home" class="flexability background background-home">
-        <img src="assets/image.png" alt="person-photo" class="picture">
-        </img>
-        <div>
-            <div class="center-items center-items-column">
-                <p>
-                    Hello, I'm 
-                </p>
-                <h1>
-                    Raha Kariminia
-                </h1>
-                <h2>
-                    a Bachelor's student in Computer Science.
-                </h2>
-            </div>
-            <div class="icons center-items">
-                <a href="https://github.com/raha1382" target="_blank" rel="noopener noreferrer">
-                    <img src="assets\1608908_github_icon.svg" alt="git-hub" class="picture s-picture">
-                </img></a>
-                <a href="https://www.linkedin.com/in/raha-kariminia-709288388/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets\4875796_linkedin_icon.svg" alt="linkdin" class="picture s-picture">
-                </img></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kariminiaraha185@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/4875795_mail_icon.svg" alt="email" class="picture s-picture">
-                </img></a>
-                <a href="https://t.me/Radiya2254" target="_blank" rel="noopener noreferrer">
-                    <img src="assets\4875780_telegram_icon.svg" alt="telegram" class="picture s-picture">
-                </img></a>
-                <button class="cv-pdf-section" id="cv-file" onclick="openCvPdf()">
-                    <p> Download CV </p>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="about" class="center-items center-items-column background background-aboutme">
-        <p>Get to khow more</p>
-        <h1>About me</h1>
-        <div id="Aboutme-section" class="flex">
-            <img src="assets\image.png" alt="person-profile-photo" class="picture s-round-picture">
-            </img>
-            <div class="Aboutme-text">
-                <p class="Aboutme-p">I am passionate about Artificial Intelligence, focusing on Deep Learning and Machine Learning ;
-
-And also I have experience with Python, C/C++, and tools like VS Code, Visual Studio, and PyCharm.
-
-My background includes data analysis using pandas, NumPy, Matplotlib, and scikit-learn.
-
-I also have some exoerience in front-end development field using HTML, CSS, JavaScript, TypeScript, React, and Tailwind CSS.
-
-I am an Organized, independent, and team-oriented person, who is also a problem-solver ;
-
-and also a person excited about theory and research, and I am always seeking opportunities for personal and professional growth.
-</p>
-                    <div class="flex">
-                        <ul class="Aboutme-box">
-                            <h2>Awards</h2>
-                            <li><p>Silver medal of the 39th Mathematical Olympiad, academic year 2020-2021</p></li>
-                            <li><p>Algorithm certificate</p></li>
-                            <li><p>Scrum/Agile certificate</p></li>
-                        </ul>
-                        <ul class="Aboutme-box">
-                            <h2>Experiences</h2>
-                            <li><p>Undergraduate Teacher Assistance</p></li>
-                            <li><p>Undergraduate Grader</p></li>
-                            <li><p>Geometry Tutor</p></li>
-                            <li><p>Worked as an AI developer at the company Rastanovinraya</p></li>
-                        </ul>
-                        <ul class="Aboutme-box">
-                            <h2>Education</h2>
-                            <li><p>Bachelor student in computer science in Amirkabir University of Technology</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-    </section>
-    <section id="experience" class="center-items center-items-column background background-experience">
-        <p>My relevant</p>
-        <h1>Experience</h1>
-        <div class="Experience-section flex">
-            <ul class="Experience-box">
-                <h2><img src="assets\check.png" alt="Verified-Icon" id="Verified-Icon"> Skills</h2>
-                <br>
-                <li><strong><h2>Languages:</h2></strong> 
-                    <ul class="Experience-text">
-                        <br><li><p>Python </p><span class="right">Experienced</span></li>
-                        <br><li><p>C/C++ </p><span class="right">Experienced</span></li>
-                    </ul>
-                </li>
-                <br>
-                <li><strong><h2>Developer Tools:</h2></strong>
-                    <ul class="Experience-text">
-                        <br><li><p>VS Code</p><span class="right">Experienced</span></li>
-                        <br><li><p>Visual Studio</p><span class="right">Experienced</span></li>
-                        <br><li><p>PyCharm</p><span class="right">Experienced</span></li>
-                    </ul>
-                </li>
-                <br>
-                <li><strong><h2>Libraries:</h2></strong>
-                    <ul class="Experience-text">
-                        <br><li><p>pandas</p><span class="right">Experienced</span></li>
-                        <br><li><p>NumPy</p><span class="right">Experienced</span></li>
-                        <br><li><p>Matplotlib</p><span class="right">Intermediate</span></li>
-                        <br><li><p>SKlearn</p><span class="right">Beginner</span></li>
-                    </ul>
-                </li>
-                <br>
-                <li><strong><h2>Web Development:</h2></strong>
-                    <ul class="Experience-text">
-                        <br><li><p>HTML</p><span class="right">Experienced</span></li>
-                        <br><li><p>CSS</p><span class="right">Experienced</span></li>
-                        <br><li><p>JavaScript</p><span class="right">Beginner</span></li>
-                        <br><li><p>TypeScript</p><span class="right">Beginner</span></li>
-                        <br><li><p>React</p><span class="right">Beginner</span></li>
-                        <br><li><p>Tailwind CSS</p><span class="right">Intermediate</span></li>
-                    </ul>
-                </li>
-                <br>
-                <li><strong><h2>Soft Skills:</h2></strong>
-                    <ul class="Experience-text">
-                        <br><li><p>Time Management</p><span class="right">Experienced</span></li>
-                        <br><li><p>Teamwork</p><span class="right">Experienced</span></li>
-                        <br><li><p>Communication</p><span class="right">Experienced</span></li>
-                        <br><li><p>Problem Solving</p><span class="right">Experienced</span></li>
-                    </ul>
-                </li>
+          <div class="info-card">
+            <h3>Experiences</h3>
+            <ul>
+              <li>Undergraduate Teacher Assistant</li>
+              <li>Undergraduate Grader</li>
+              <li>Geometry Tutor</li>
+              <li>AI Developer at Rastanovinraya</li>
             </ul>
+          </div>
 
-            <ul class="Experience-box">
-                <h2><img src="assets\check.png" alt="Verified-Icon" id="Verified-Icon"> Educational Experience</h2>
-                <br>
-                <li><strong><h2>Undergraduate Teacher Assistance:</h2></strong></li>
-                <ul class="Experience-text">
-                    <br><li><p>Artificial Intelligence & Workshop</p><span class="right">Fall 2024</span></li>
-                    <br><li><p>Foundation of Combinatorics</p><span class="right">Fall 2023 & Spring 2023</span></li>
-                    <br><li><p>Numerical Linear Algebra</p><span class="right">Fall 2025</span></li>
-                </ul>
-
-                <br>
-                <li><strong><h2>Undergraduate Grader:</h2></strong></li>
-                <ul class="Experience-text">
-                    <br><li><p>Basic Programming</p><span class="right">Spring 2025</span></li>
-                </ul>
-
-                <br>
-                <li><strong><h2>Tutor:</h2></strong></li>
-                <ul class="Experience-text">
-                    <br><li><p>Highschool Private Geometry Tutor</p><span class="right">Summer 2024 - Spring 2025</span></li>
-                </ul>
-
-                <br>
-                <li><strong><h2>Internship:</h2></strong></li>
-                <ul class="Experience-text">
-                    <br><li><p>Rastanovinraya Company working as an AI developer (develop chatbot)</p><span class="right">12 July 2025 - 9 August 2025</span></li>
-                </ul>
+          <div class="info-card">
+            <h3>Education</h3>
+            <ul>
+              <li>B.Sc. Computer Science — Amirkabir University of Technology</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-head">
+      <p class="eyebrow">My relevant</p>
+      <h1>Experience</h1>
+    </div>
+
+    <div class="experience-grid">
+      <div class="exp-card">
+        <h2 class="exp-title">
+          <img src="assets/check.png" alt="" class="check-icon" /> Skills
+        </h2>
+
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-row"><span>Python</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>C / C++</span><span class="tag">Experienced</span></div>
         </div>
 
-    </section>
-    <section id="projects" class="center-items center-items-column background background-projects">
-        <p>My recent</p>
-        <h1>Projects</h1>
-        <div class="flex">
-            <div class="Project-box center-items center-items-column">
-                <img src="assets\space_invaders.avif" alt="project1" class="Project-picture">
-                <div class="slide">
-                    <p><strong>Space Invaders Game</strong></p>
-                    <p>A modern Space Invaders remake in C++ with Qt, featuring smooth graphics and responsive controls.</p>
-                    <a href="https://github.com/raha1382/Space-Invaders-Game" target="_blank" rel="noopener noreferrer" class="Project-link">
-                        <button class="Project-button"><p>Github</p></button>
-                    </a>
-                </div>
-            </div>
-            <div class="Project-box center-items center-items-column">
-                <img src="assets\pagerank.png" alt="project1" class="Project-picture">
-                <div class="slide">
-                    <p><strong>Page Rank Algorithm</strong></p>
-                    <p>This project implements and analyzes the PageRank algorithm on the Berkeley-Stanford Web Graph dataset.</p>
-                    <a href="https://github.com/raha1382/PageRankAlgorithm" target="_blank" rel="noopener noreferrer" class="Project-link">
-                        <button class="Project-button"><p>Github</p></button>
-                    </a>
-                </div>
-            </div>
-            <div class="Project-box center-items center-items-column">
-                <img src="assets\ADHD.webp" alt="project1" class="Project-picture">
-                <div class="slide">
-                    <p><strong>ADHD ML Analyzer</strong></p>
-                    <p>ADHD-ML-Analyzer is a Python ML project for analyzing mental health data to detect ADHD and related conditions.</p>
-                    <a href="https://github.com/raha1382/ADHD-ML-Analyzer" target="_blank" rel="noopener noreferrer" class="Project-link">
-                        <button class="Project-button"><p>Github</p></button>
-                    </a>
-                </div>
-            </div>
-            <div class="Project-box center-items center-items-column">
-                <img src="assets\qr.jpeg" alt="project1" class="Project-picture">
-                <div class="slide">
-                    <p><strong>QR Handwriting Detection</strong></p>
-                    <p>This project builds a handwritten letter recognition system using least squares with QR decomposition.</p>
-                    <a href="https://github.com/raha1382/QR-Handwriting-Detection" target="_blank" rel="noopener noreferrer" class="Project-link">
-                        <button class="Project-button"><p>Github</p></button>
-                    </a>
-                </div>
-            </div>
+        <div class="skill-group">
+          <h4>Developer Tools</h4>
+          <div class="skill-row"><span>VS Code</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>Visual Studio</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>PyCharm</span><span class="tag">Experienced</span></div>
         </div>
-    </section>
-    <section id="contact" class="center-items background background-contact">
-        <div class="center-items center-items-column">
-            <p>Ways to</p>
-            <h1>Contact</h1>
-            <button class="cv-pdf-section" id="cv-file" onclick="openCvPdf()">
-                <p> Download CV </p>
-            </button>
+
+        <div class="skill-group">
+          <h4>Libraries</h4>
+          <div class="skill-row"><span>pandas</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>NumPy</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>Matplotlib</span><span class="tag">Intermediate</span></div>
+          <div class="skill-row"><span>scikit-learn</span><span class="tag">Beginner</span></div>
         </div>
-        <div class="center-items center-items-column Contact-icons">
-                <a href="https://github.com/raha1382" target="_blank" rel="noopener noreferrer">
-                    <img src="assets\1608908_github_icon.svg" alt="git-hub" class="picture s-picture"><p>Github</p>
-                </img></a>
-                <a href="https://www.linkedin.com/in/raha-kariminia-709288388/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets\4875796_linkedin_icon.svg" alt="linkdin" class="picture s-picture"><p>Linkdin</p>
-                </img></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kariminiaraha185@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/4875795_mail_icon.svg" alt="email" class="picture s-picture"><p>Gmail</p>
-                </img></a>
-                <a href="https://t.me/Radiya2254" target="_blank" rel="noopener noreferrer">
-                    <img src="assets\4875780_telegram_icon.svg" alt="telegram" class="picture s-picture"><p>Telegram</p>
-                </img></a>
-            </div>
-    </section>
-    <footer class="center-items background-footer">
-        <div class="footer-box">
-            <ul class="nav-links">
-                <li><a href="#Home"> <p>Home</p></a></li>
-                <li><a href="#about"> <p>About</p></a></li>
-                <li><a href="#experience"> <p>Exprience</p></a></li>
-                <li><a href="#projects"> <p>Projects</p></a></li>
-                <li><a href="#contact"> <p>Contact</p></a></li>
-            </ul>
+
+        <div class="skill-group">
+          <h4>Web Development</h4>
+          <div class="skill-row"><span>HTML</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>CSS</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>JavaScript</span><span class="tag">Beginner</span></div>
+          <div class="skill-row"><span>TypeScript</span><span class="tag">Beginner</span></div>
+          <div class="skill-row"><span>React</span><span class="tag">Beginner</span></div>
+          <div class="skill-row"><span>Tailwind CSS</span><span class="tag">Intermediate</span></div>
         </div>
-    </footer>
-    <script src="script.js">
-    </script>
-    
+
+        <div class="skill-group">
+          <h4>Soft Skills</h4>
+          <div class="skill-row"><span>Time Management</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>Teamwork</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>Communication</span><span class="tag">Experienced</span></div>
+          <div class="skill-row"><span>Problem Solving</span><span class="tag">Experienced</span></div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <h2 class="exp-title">
+          <img src="assets/check.png" alt="" class="check-icon" /> Educational Experience
+        </h2>
+
+        <div class="timeline-item">
+          <h4>Undergraduate Teacher Assistant</h4>
+          <div class="skill-row"><span>Artificial Intelligence & Workshop</span><span class="tag">Fall 2024</span></div>
+          <div class="skill-row"><span>Foundations of Combinatorics</span><span class="tag">Fall 2023 & Spring 2023</span></div>
+          <div class="skill-row"><span>Numerical Linear Algebra</span><span class="tag">Fall 2025</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Undergraduate Grader</h4>
+          <div class="skill-row"><span>Basic Programming</span><span class="tag">Spring 2025</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Tutor</h4>
+          <div class="skill-row"><span>Highschool Private Geometry Tutor</span><span class="tag">Summer 2024 – Spring 2025</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Internship</h4>
+          <div class="skill-row"><span>Rastanovinraya — AI Developer (chatbot)</span><span class="tag">Jul – Aug 2025</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-head">
+      <p class="eyebrow">My recent</p>
+      <h1>Projects</h1>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="assets/space_invaders.avif" alt="Space Invaders Game" />
+        <div class="project-overlay">
+          <h3>Space Invaders Game</h3>
+          <p>A modern Space Invaders remake in C++ with Qt, featuring smooth graphics and responsive controls.</p>
+          <div class="project-tags">
+            <span>C++</span>
+            <span>Qt</span>
+            <span>Game Dev</span>
+          </div>
+          <a href="https://github.com/raha1382/Space-Invaders-Game" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/pagerank.png" alt="PageRank Algorithm" />
+        <div class="project-overlay">
+          <h3>PageRank Algorithm</h3>
+          <p>Implements and analyzes the PageRank algorithm on the Berkeley–Stanford Web Graph dataset.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>NumPy</span>
+            <span>Graph</span>
+          </div>
+          <a href="https://github.com/raha1382/PageRankAlgorithm" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/ADHD.webp" alt="ADHD ML Analyzer" />
+        <div class="project-overlay">
+          <h3>ADHD ML Analyzer</h3>
+          <p>A Python ML project analyzing mental health data to detect ADHD and related conditions.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>ML</span>
+            <span>scikit-learn</span>
+          </div>
+          <a href="https://github.com/raha1382/ADHD-ML-Analyzer" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/qr.jpeg" alt="QR Handwriting Detection" />
+        <div class="project-overlay">
+          <h3>QR Handwriting Detection</h3>
+          <p>A handwritten letter recognition system using least squares with QR decomposition.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Linear Algebra</span>
+            <span>QR</span>
+          </div>
+          <a href="https://github.com/raha1382/QR-Handwriting-Detection" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Ways to</p>
+      <h1>Contact</h1>
+    </div>
+
+    <div class="contact-wrap">
+      <p class="contact-note">
+        I'm always happy to talk about research, ideas, or new opportunities —
+        feel free to reach out through any channel below.
+      </p>
+      <button class="btn-primary" onclick="openCvPdf()">Download CV</button>
+
+      <div class="contact-grid">
+        <a href="https://github.com/raha1382" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <img src="assets/1608908_github_icon.svg" alt="GitHub" />
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/raha-kariminia-709288388/" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <img src="assets/4875796_linkedin_icon.svg" alt="LinkedIn" />
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kariminiaraha185@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <img src="assets/4875795_mail_icon.svg" alt="Gmail" />
+          <span>Gmail</span>
+        </a>
+        <a href="https://t.me/Radiya2254" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <img src="assets/4875780_telegram_icon.svg" alt="Telegram" />
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-note">© 2026 Raha Kariminia.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
