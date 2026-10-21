@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raha Kariminia — Portfolio</title>
+  <title>Raha Kariminia</title>
   <link rel="stylesheet" href="generals.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -13,9 +13,12 @@
     <div class="logo">Raha Kariminia</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Research Interests</a></li>
+      <li><a href="#awards">Awards</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -28,196 +31,277 @@
       </div>
       <div class="menu-links">
         <li><a href="#home" onclick="togglemenu()">Home</a></li>
-        <li><a href="#about" onclick="togglemenu()">About</a></li>
+        <li><a href="#education" onclick="togglemenu()">Education</a></li>
+        <li><a href="#interests" onclick="togglemenu()">Research Interests</a></li>
+        <li><a href="#awards" onclick="togglemenu()">Awards</a></li>
         <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
         <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+        <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
         <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
       </div>
     </div>
   </nav>
 
+  <!-- ===== Hero ===== -->
   <section id="home" class="hero">
     <div class="hero-text">
-      <span class="hero-subtitle">
-        Hello, I'm
-      </span>
-
+      <span class="hero-subtitle">Hello, I'm</span>
       <h1 class="hero-name">
         <span class="first">Raha</span>
         <span class="last">Kariminia</span>
       </h1>
+      <h2>B.Sc. in Computer Science · Graduated Sep 2026</h2>
 
-      <h2>Bachelor's student in Computer Science</h2>
-
-      <p class="hero-availability">
+      <p class="hero-availability hero-availability-open">
         <span class="pulse-dot"></span>
-        Open to research & collaboration
+        <strong>Currently seeking Master's and Ph.D. positions</strong>
       </p>
 
       <p class="hero-desc">
-        Passionate about <span class="accent">Artificial Intelligence</span>, Deep Learning, and Machine Learning.
-        I build intelligent systems and enjoy turning research ideas into real, working projects.
+        Passionate about <span class="accent">Federated Learning</span>, <span class="accent">Graph ML</span>, and <span class="accent">Generative AI</span>.
       </p>
-
       <div class="hero-actions">
         <button class="btn-primary" onclick="openCvPdf()">Download CV</button>
         <div class="hero-icons">
           <a href="https://github.com/raha1382" target="_blank" rel="noopener noreferrer">
             <img src="assets/1608908_github_icon.svg" alt="GitHub" class="icon" />
           </a>
-          <a href="https://www.linkedin.com/in/raha-kariminia-709288388/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/raha-kariminia-051a33442/" target="_blank" rel="noopener noreferrer">
             <img src="assets/4875796_linkedin_icon.svg" alt="LinkedIn" class="icon" />
           </a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kariminiaraha185@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src="assets/4875795_mail_icon.svg" alt="Email" class="icon" />
           </a>
-          <a href="https://t.me/Radiya2254" target="_blank" rel="noopener noreferrer">
-            <img src="assets/4875780_telegram_icon.svg" alt="Telegram" class="icon" />
-          </a>
         </div>
       </div>
     </div>
-
     <div class="hero-image">
       <img src="assets/image.jpg" alt="Raha Kariminia" />
     </div>
   </section>
 
-  <section id="about" class="section">
+  <!-- ===== Education ===== -->
+  <section id="education" class="section">
     <div class="section-head">
-      <p class="eyebrow">Get to know more</p>
-      <h1>About Me</h1>
+      <p class="eyebrow">Academic background</p>
+      <h1>Education</h1>
     </div>
 
-    <div class="about-grid">
-
-      <div class="about-content">
-        <p class="about-quote">"Curious mind, building intelligent systems — one project at a time."</p>
-
-        <p>
-          I am passionate about Artificial Intelligence, focusing on Deep Learning and Machine Learning.
-          I have experience with Python, C/C++, and tools like VS Code, Visual Studio, and PyCharm.
-          My background includes data analysis using pandas, NumPy, Matplotlib, and scikit-learn.
-        </p>
-        <p>
-          I also have experience in front-end development using HTML, CSS, JavaScript, TypeScript,
-          React, and Tailwind CSS. I am organized, independent, and team-oriented — a problem-solver
-          excited about theory and research, always seeking personal and professional growth.
-        </p>
-
-        <div class="about-cards">
-          <div class="info-card">
-            <h3>Awards</h3>
-            <ul>
-              <li>Silver medal — 39th Mathematical Olympiad (2020–2021)</li>
-              <li>Algorithm certificate</li>
-              <li>Scrum / Agile certificate</li>
-            </ul>
-          </div>
-
-          <div class="info-card">
-            <h3>Experiences</h3>
-            <ul>
-              <li>Undergraduate Teacher Assistant</li>
-              <li>Undergraduate Grader</li>
-              <li>Geometry Tutor</li>
-              <li>AI Developer at Rastanovinraya</li>
-            </ul>
-          </div>
-
-          <div class="info-card">
-            <h3>Education</h3>
-            <ul>
-              <li>B.Sc. Computer Science — Amirkabir University of Technology</li>
-            </ul>
-          </div>
+    <div class="education-card">
+      <div class="edu-header">
+        <img src="assets/amirkabir.png" alt="Amirkabir University of Technology" class="edu-logo" />
+        <div class="edu-info">
+          <h3>Amir Kabir University of Technology (Tehran Polytechnic)</h3>
+          <p class="edu-degree">B.Sc. in Computer Science</p>
+          <p class="edu-date">Sep 2022 – Sep 2026</p>
         </div>
+      </div>
+
+      <ul class="edu-details">
+        <li><strong>Cumulative GPA:</strong> 19.52/20 (U.S. Scale: 3.97/4)</li>
+        <li><strong>Major GPA:</strong> 20/20 (U.S. Scale: 4/4)</li>
+        <li><strong>Ranked 4th</strong> in the 2022 Computer Science bachelor program</li>
+      </ul>
+
+      <p class="edu-thesis">
+        <strong>Relevant Courses:</strong> AI and Workshop, Introduction to Neural Networks and Deep Learning, Graph Theory (all 20/20), Data Mining (18.34/20).
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Research Interests ===== -->
+  <section id="interests" class="section">
+    <div class="section-head">
+      <p class="eyebrow">What I work on</p>
+      <h1>Research Interests</h1>
+    </div>
+
+    <div class="interests-lines">
+      <div class="interest-line" style="--accent: #E07A3F; --accent-soft: #FBEADF;">
+        <span class="interest-label">Federated Learning</span>
+        <span class="interest-values">Personalized and Heterogeneous Federated Learning</span>
+      </div>
+      <div class="interest-line" style="--accent: #4CAF7D; --accent-soft: #E4F4EC;">
+        <span class="interest-label">Graph ML</span>
+        <span class="interest-values">GNNs, Graph Representation Learning, Node Generation</span>
+      </div>
+      <div class="interest-line" style="--accent: #D4A82C; --accent-soft: #FAF2D8;">
+        <span class="interest-label">Generative AI</span>
+        <span class="interest-values">GANs, VAEs, Diffusion Transformers</span>
+      </div>
+      <div class="interest-line" style="--accent: #3E7CB1; --accent-soft: #E3EEF7;">
+        <span class="interest-label">Optimization</span>
+        <span class="interest-values">MILP, Combinatorial Optimization, Learning-Augmented Optimization</span>
+      </div>
+      <div class="interest-line" style="--accent: #B0468A; --accent-soft: #F6E4F0;">
+        <span class="interest-label">Other ML Interests</span>
+        <span class="interest-values">Reinforcement Learning, Game Theory, Behavioral Pattern Mining</span>
       </div>
     </div>
   </section>
 
+  <!-- ===== Awards & Certifications ===== -->
+  <section id="awards" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Recognition & credentials</p>
+      <h1>Awards &amp; Certifications</h1>
+    </div>
+
+    <!-- Awards -->
+    <h4 class="sub-heading">Awards</h4>
+
+    <div class="award-card">
+      <img src="assets/medal.png" alt="National Mathematical Olympiad" class="award-icon" />
+      <div class="award-info">
+        <h3 class="medal-title">
+          <span class="medal-badge" aria-hidden="true">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="silverGrad" cx="35%" cy="30%" r="75%">
+                  <stop offset="0%" stop-color="#FFFFFF"/>
+                  <stop offset="35%" stop-color="#E8ECEF"/>
+                  <stop offset="70%" stop-color="#B8C0C8"/>
+                  <stop offset="100%" stop-color="#8A939C"/>
+                </radialGradient>
+                <linearGradient id="ribbonGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#3E7CB1"/>
+                  <stop offset="100%" stop-color="#1B2A4E"/>
+                </linearGradient>
+              </defs>
+              <path d="M10 2 L16 10 L22 2 L20 2 L16 7 L12 2 Z" fill="url(#ribbonGrad)"/>
+              <path d="M12 2 L16 8 L20 2 L18 2 L16 5 L14 2 Z" fill="#2E4A7D" opacity="0.7"/>
+              <circle cx="16" cy="20" r="9" fill="url(#silverGrad)" stroke="#7A828A" stroke-width="0.6"/>
+              <circle cx="16" cy="20" r="6.5" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.7"/>
+              <path d="M16 15.5 L17.2 18.4 L20.3 18.6 L17.9 20.6 L18.6 23.6 L16 22 L13.4 23.6 L14.1 20.6 L11.7 18.6 L14.8 18.4 Z"
+                    fill="#FFFFFF" opacity="0.95"/>
+              <ellipse cx="12.5" cy="17" rx="2.2" ry="1.4" fill="#FFFFFF" opacity="0.75" transform="rotate(-35 12.5 17)"/>
+            </svg>
+          </span>
+          Silver Medal, 39th National Mathematical Olympiad, Iran
+        </h3>
+        <p class="award-date">Academic year 2020 – 2021</p>
+        <p>Silver medal of the 39th National Mathematical Olympiad.</p>
+        <a href="https://drive.google.com/file/d/1Kgz1LfBWyF8VxWScjHoUz5hUu5lXHjTm/preview"
+           target="_blank" rel="noopener noreferrer"
+           class="cert-link">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <h4 class="sub-heading">Certifications</h4>
+
+    <div class="award-card">
+      <img src="assets/sabanci.png" alt="Sabanci University" class="award-icon" />
+      <img src="assets/pure.png" alt="Pure Internship" class="award-icon" />
+      <div class="award-info">
+        <h3>Research Internship: PURE Program</h3>
+        <p class="award-date">Jul 2026 – Aug 2026</p>
+        <p>Sabanci University, Conducted a research project titled "Learning-Augmented Optimization for Time-Dependent Soft-Clustered Vehicle Routing".</p>
+        <a href="https://drive.google.com/file/d/1fTbXkhrCyBhoz-vBEsTT2rIrszwHn9SK/preview"
+           target="_blank" rel="noopener noreferrer"
+           class="cert-link">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="award-card">
+      <img src="assets/algorithm.jpg" alt="Amirkabir University of Technology" class="award-icon" />
+      <div class="award-info">
+        <h3>Algorithm Arena Course</h3>
+        <p class="award-date">Sep 2023</p>
+        <p>Amirkabir University of Technology, Earned skills in competitive algorithms through a skill-based course, covering graph algorithms, dynamic programming, greedy methods, and advanced data structures.</p>
+        <a href="https://drive.google.com/file/d/1KdoYQSZfH7hQp-S_OjNB-0JHFChdo_33/preview"
+           target="_blank" rel="noopener noreferrer"
+           class="cert-link">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="award-card">
+      <img src="assets/agile.jpg" alt="Ultima Training Tech Co." class="award-icon" />
+      <div class="award-info">
+        <h3>Scrum/Agile Workshop</h3>
+        <p class="award-date">Dec 2024</p>
+        <p>Ultima Training Tech Co., Gained knowledge of Agile working methods and the Scrum framework and their differences through a workshop organized by this company.</p>
+        <a href="https://drive.google.com/file/d/1EO4-DXSZ3T5nnuvzW3FmcM0gOpW87q8X/preview"
+           target="_blank" rel="noopener noreferrer"
+           class="cert-link">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
   <section id="experience" class="section">
     <div class="section-head">
-      <p class="eyebrow">My relevant</p>
+      <p class="eyebrow">Where I've worked</p>
       <h1>Experience</h1>
     </div>
 
-    <div class="experience-grid">
-      <div class="exp-card">
-        <h2 class="exp-title">
-          <img src="assets/check.png" alt="" class="check-icon" /> Skills
-        </h2>
-
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <div class="skill-row"><span>Python</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>C / C++</span><span class="tag">Experienced</span></div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Developer Tools</h4>
-          <div class="skill-row"><span>VS Code</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>Visual Studio</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>PyCharm</span><span class="tag">Experienced</span></div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Libraries</h4>
-          <div class="skill-row"><span>pandas</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>NumPy</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>Matplotlib</span><span class="tag">Intermediate</span></div>
-          <div class="skill-row"><span>scikit-learn</span><span class="tag">Beginner</span></div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Web Development</h4>
-          <div class="skill-row"><span>HTML</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>CSS</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>JavaScript</span><span class="tag">Beginner</span></div>
-          <div class="skill-row"><span>TypeScript</span><span class="tag">Beginner</span></div>
-          <div class="skill-row"><span>React</span><span class="tag">Beginner</span></div>
-          <div class="skill-row"><span>Tailwind CSS</span><span class="tag">Intermediate</span></div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Soft Skills</h4>
-          <div class="skill-row"><span>Time Management</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>Teamwork</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>Communication</span><span class="tag">Experienced</span></div>
-          <div class="skill-row"><span>Problem Solving</span><span class="tag">Experienced</span></div>
+    <div class="exp-item">
+      <div class="exp-image">
+        <img src="assets/fgl.png" alt="FedHyPr-MNG project" />
+        <div class="exp-icon">
+          <img src="assets/norc.png" alt="NORC Lab" />
         </div>
       </div>
+      <div class="exp-content">
+        <h3>Research Collaboration, NORC Lab</h3>
+        <p class="exp-meta">Amirkabir University of Technology &nbsp;|&nbsp; Apr 2026 – Sep 2026</p>
+        <p class="exp-supervisor">Supervisor: Dr. Mehdi Ghatee</p>
+        <ul>
+          <li>Identified a key limitation in <strong>federated graph learning</strong> arising from <strong>heterogeneity in feature domains</strong> and <strong>missing cross-subgraph neighbors</strong> for each client. These factors result in <strong>local bias</strong> that cannot be handled by standard federated learning.</li>
+          <li>Built <strong>FedHyPr-MNG</strong>, a hybrid framework that improves the <strong>personalization–generalization trade-off</strong> in federated graph learning by combining <strong>global node generation, cross-client prototype sharing, and a dual-encoder design</strong>. On our benchmarks, it outperformed baseline combinations of these components.</li>
+          <li>This project started as my <strong>bachelor's thesis</strong>, which was completed in Sep 2026, and more advanced versions are still under development with my supervisor.</li>
+        </ul>
+      </div>
+    </div>
 
-      <div class="exp-card">
-        <h2 class="exp-title">
-          <img src="assets/check.png" alt="" class="check-icon" /> Educational Experience
-        </h2>
-
-        <div class="timeline-item">
-          <h4>Undergraduate Teacher Assistant</h4>
-          <div class="skill-row"><span>Artificial Intelligence & Workshop</span><span class="tag">Fall 2024</span></div>
-          <div class="skill-row"><span>Foundations of Combinatorics</span><span class="tag">Fall 2023 & Spring 2023</span></div>
-          <div class="skill-row"><span>Numerical Linear Algebra</span><span class="tag">Fall 2025</span></div>
+    <div class="exp-item">
+      <div class="exp-image">
+        <img src="assets/cluvrptw.png" alt="Vehicle Routing project" />
+        <div class="exp-icons">
+          <div class="exp-icon">
+            <img src="assets/sabanci.png" alt="Sabanci University" />
+          </div>
+          <div class="exp-icon">
+            <img src="assets/pure.png" alt="PURE Program" />
+          </div>
         </div>
+      </div>
+      <div class="exp-content">
+        <h3>Summer Internship, PURE Program</h3>
+        <p class="exp-meta"> Sabanci University &nbsp;|&nbsp; Jul 2026 – Aug 2026</p>
+        <p class="exp-supervisor">Supervisor: Dr. Erhun Kundakcioglu</p>
+        <ul>
+          <li>Worked on a <strong>learning-augmented optimization</strong> project for a <strong>time-dependent vehicle routing problem</strong> in last-mile delivery, where customers are grouped into <strong>flexible clusters</strong> and served within <strong>time windows</strong>.</li>
+          <li>Formulated a <strong>MILP model</strong> with <strong>cluster-level</strong> and <strong>multi-commodity</strong> constraints, solved it with <strong>Gurobi</strong>, and generated synthetic urban delivery datasets.</li>
+          <li>Compared the MILP against a <strong>DFS-Greedy</strong> baseline that assigns clusters to vehicles via depth-first search and then builds routes with greedy nearest-neighbor and <strong>2-opt local search</strong>, cutting costs by <strong>7.6–15.5%</strong>. The internship ended in Aug 2026, and the work continues with my supervisor, with more advanced versions under development and learning-based extensions planned.</li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="timeline-item">
-          <h4>Undergraduate Grader</h4>
-          <div class="skill-row"><span>Basic Programming</span><span class="tag">Spring 2025</span></div>
+    <div class="exp-item">
+      <div class="exp-image">
+        <img src="assets/mcs.jpg" alt="Teaching Assistant" />
+        <div class="exp-icon">
+          <img src="assets/amirkabir.png" alt="Amirkabir University" />
         </div>
-
-        <div class="timeline-item">
-          <h4>Tutor</h4>
-          <div class="skill-row"><span>Highschool Private Geometry Tutor</span><span class="tag">Summer 2024 – Spring 2025</span></div>
-        </div>
-
-        <div class="timeline-item">
-          <h4>Internship</h4>
-          <div class="skill-row"><span>Rastanovinraya — AI Developer (chatbot)</span><span class="tag">Jul – Aug 2025</span></div>
-        </div>
+      </div>
+      <div class="exp-content">
+        <h3>Undergraduate Teaching Assistant</h3>
+        <p class="exp-meta">Amir Kabir University of Technology</p>
+        <ul class="ta-list">
+          <li><span>Advanced Artificial Intelligence (M.Sc. Level Course)</span><span class="tag">Spring 2026</span></li>
+          <li><span>Data Mining</span><span class="tag">Spring 2026</span></li>
+          <li><span>Artificial Intelligence &amp; Workshop</span><span class="tag">Fall 2024</span></li>
+          <li><span>Foundations of Combinatorics</span><span class="tag">Fall 2023 &amp; Spring 2023</span></li>
+          <li><span>Numerical Linear Algebra</span><span class="tag">Fall 2025 &amp; Spring 2026</span></li>
+          <li><span>Basic Programming</span><span class="tag">Spring 2025</span></li>
+          <li><span>Foundation of Numerical Analysis</span><span class="tag">Spring 2026</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- ===== Projects ===== -->
   <section id="projects" class="section">
     <div class="section-head">
       <p class="eyebrow">My recent</p>
@@ -231,9 +315,7 @@
           <h3>Space Invaders Game</h3>
           <p>A modern Space Invaders remake in C++ with Qt, featuring smooth graphics and responsive controls.</p>
           <div class="project-tags">
-            <span>C++</span>
-            <span>Qt</span>
-            <span>Game Dev</span>
+            <span>C++</span><span>Qt</span><span>Game Dev</span>
           </div>
           <a href="https://github.com/raha1382/Space-Invaders-Game" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
         </div>
@@ -245,9 +327,7 @@
           <h3>PageRank Algorithm</h3>
           <p>Implements and analyzes the PageRank algorithm on the Berkeley–Stanford Web Graph dataset.</p>
           <div class="project-tags">
-            <span>Python</span>
-            <span>NumPy</span>
-            <span>Graph</span>
+            <span>Python</span><span>NumPy</span><span>Graph</span>
           </div>
           <a href="https://github.com/raha1382/PageRankAlgorithm" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
         </div>
@@ -259,9 +339,7 @@
           <h3>ADHD ML Analyzer</h3>
           <p>A Python ML project analyzing mental health data to detect ADHD and related conditions.</p>
           <div class="project-tags">
-            <span>Python</span>
-            <span>ML</span>
-            <span>scikit-learn</span>
+            <span>Python</span><span>ML</span><span>scikit-learn</span>
           </div>
           <a href="https://github.com/raha1382/ADHD-ML-Analyzer" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
         </div>
@@ -273,9 +351,7 @@
           <h3>QR Handwriting Detection</h3>
           <p>A handwritten letter recognition system using least squares with QR decomposition.</p>
           <div class="project-tags">
-            <span>Python</span>
-            <span>Linear Algebra</span>
-            <span>QR</span>
+            <span>Python</span><span>Linear Algebra</span><span>QR</span>
           </div>
           <a href="https://github.com/raha1382/QR-Handwriting-Detection" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub</a>
         </div>
@@ -283,6 +359,42 @@
     </div>
   </section>
 
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <p class="eyebrow">What I use</p>
+      <h1>Skills</h1>
+    </div>
+
+    <div class="skills-lines">
+      <div class="skill-line">
+        <span class="skill-label">Languages</span>
+        <span class="skill-values">Python, C/C++, LaTeX</span>
+      </div>
+      <div class="skill-line">
+        <span class="skill-label">ML &amp; Data</span>
+        <span class="skill-values">PyTorch, TensorFlow, Scikit-learn, NumPy, pandas, SciPy, Matplotlib</span>
+      </div>
+      <div class="skill-line">
+        <span class="skill-label">Graphs &amp; Optimization</span>
+        <span class="skill-values">NetworkX, Node2Vec, Gurobi, Pyomo, MILP</span>
+      </div>
+      <div class="skill-line">
+        <span class="skill-label">Backend</span>
+        <span class="skill-values">FastAPI, PostgreSQL, SQLAlchemy, REST APIs, Docker, Git</span>
+      </div>
+      <div class="skill-line">
+        <span class="skill-label">Web</span>
+        <span class="skill-values">React, TypeScript, JavaScript, HTML/CSS, Tailwind</span>
+      </div>
+      <div class="skill-line">
+        <span class="skill-label">Tools</span>
+        <span class="skill-values">Poetry, Postman, VS Code, PyCharm, Visual Studio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
   <section id="contact" class="section">
     <div class="section-head">
       <p class="eyebrow">Ways to</p>
@@ -290,10 +402,6 @@
     </div>
 
     <div class="contact-wrap">
-      <p class="contact-note">
-        I'm always happy to talk about research, ideas, or new opportunities —
-        feel free to reach out through any channel below.
-      </p>
       <button class="btn-primary" onclick="openCvPdf()">Download CV</button>
 
       <div class="contact-grid">
@@ -301,17 +409,13 @@
           <img src="assets/1608908_github_icon.svg" alt="GitHub" />
           <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/raha-kariminia-709288388/" target="_blank" rel="noopener noreferrer" class="contact-item">
+        <a href="https://www.linkedin.com/in/raha-kariminia-051a33442/" target="_blank" rel="noopener noreferrer" class="contact-item">
           <img src="assets/4875796_linkedin_icon.svg" alt="LinkedIn" />
           <span>LinkedIn</span>
         </a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kariminiaraha185@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item">
           <img src="assets/4875795_mail_icon.svg" alt="Gmail" />
           <span>Gmail</span>
-        </a>
-        <a href="https://t.me/Radiya2254" target="_blank" rel="noopener noreferrer" class="contact-item">
-          <img src="assets/4875780_telegram_icon.svg" alt="Telegram" />
-          <span>Telegram</span>
         </a>
       </div>
     </div>
@@ -320,12 +424,15 @@
   <footer class="footer">
     <ul class="footer-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Research Interests</a></li>
+      <li><a href="#awards">Awards</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <p class="footer-note">© 2026 Raha Kariminia.</p>
+    <p class="footer-note">© 2026 Raha Kariminia</p>
   </footer>
 
   <script src="script.js"></script>

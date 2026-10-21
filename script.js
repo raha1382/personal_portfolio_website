@@ -37,3 +37,4 @@ document.querySelectorAll(".section").forEach((section) => {
   section.style.transition = "opacity 0.7s ease, transform 0.7s ease";
   observer.observe(section);
 });
+

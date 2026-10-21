@@ -1,4 +1,8 @@
+/* ============================================
+   MEDIA QUERIES — Raha Kariminia Portfolio
+   ============================================ */
 
+/* ---------- Tablet / Small Desktop (≤ 992px) ---------- */
 @media screen and (max-width: 992px) {
   #desktop-nav { display: none; }
   #hamburger-nav {
@@ -25,8 +29,44 @@
   .about-image img { width: 260px; height: 260px; }
   .about-content { text-align: center; }
   .about-content .about-cards { justify-content: center; }
+
+  .exp-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .exp-image {
+    flex: 0 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .exp-image > img {
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+  }
+  .exp-icon {
+    width: 42px;
+    height: 42px;
+  }
+  .exp-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .edu-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .edu-details {
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+  }
 }
 
+/* ---------- Mobile (≤ 600px) ---------- */
 @media screen and (max-width: 600px) {
   nav { height: 68px; padding: 0 5vw; }
   .logo { font-size: 1.25rem; }
@@ -61,4 +101,96 @@
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
 
   .footer-links { gap: 1rem; }
+
+  .skills-lines,
+  .interests-lines {
+    padding: 0.5rem 1.1rem;
+  }
+  .skill-line,
+  .interest-line {
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+  }
+  .skill-label,
+  .interest-label {
+    flex: 0 0 auto;
+  }
+
+  .education-card {
+    padding: 1.4rem;
+  }
+  .edu-thesis {
+    font-size: 0.84rem;
+  }
+
+  .award-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+  .award-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .exp-item {
+    padding: 1.3rem;
+  }
+
+  .ta-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+}
+
+.exp-image {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 320px;
+}
+.exp-image > img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+}
+
+/* ---------- Certificate link on mobile ---------- */
+@media screen and (max-width: 600px) {
+  .cert-link {
+    font-size: 0.72rem;
+    padding: 5px 12px;
+  }
+}
+
+/* ============================================
+   AWARDS & CERTIFICATIONS — Responsive
+   ============================================ */
+
+@media screen and (max-width: 600px) {
+  .award-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  .award-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .cert-link {
+    font-size: 0.72rem;
+    padding: 5px 12px;
+  }
+
+  .medal-badge {
+    width: 26px;
+    height: 26px;
+  }
+
+  .medal-title {
+    gap: 8px;
+  }
 }
